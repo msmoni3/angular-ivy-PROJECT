@@ -1,0 +1,17 @@
+<form [formGroup]='f' (ngSubmit)="onSubmit()">
+  <h4>Username</h4>
+                 
+  <input type="text" formControlName='username' class="form-control" id="one" placeholder="something" >
+<h4>Email</h4>
+  <input type="text" formControlName="email" class="form-control" id="verify" placeholder="email" >
+
+  <div formArrayName='hobbies'>
+        <h4>Add Hobbies</h4>
+        <button type="button" (click)="onAddHobby()" class="btn btn-warning" id="three">Add Hobbies</button>
+        <!-- <div *ngFor="let hob of f.get('hobbies').controls; let i= index ">
+            <input class="form-control" [formControlName]="i">
+        </div> -->
+  </div>              
+                    
+                    
+</form>

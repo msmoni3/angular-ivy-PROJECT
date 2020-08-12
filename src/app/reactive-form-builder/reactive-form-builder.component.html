@@ -1,0 +1,62 @@
+<form [formGroup]='profileForm' (ngSubmit)="onSubmit()">
+  
+  <label>
+    First Name:
+    <input type="text" formControlName="firstName">
+  </label>
+<br>
+<br>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+  <br>
+
+
+  <div formGroupName="address">
+  <h3>Address</h3>
+
+  <label>
+    Street:
+    <input type="text" formControlName="street">
+  </label>
+<br>
+  <br>
+  <label>
+    City:
+    <input type="text" formControlName="city">
+  </label>
+  <br>
+  <br>
+  <label>
+    State:
+    <input type="text" formControlName="state">
+  </label>
+<br>
+  <br>
+  <label>
+    Zip Code:
+    <input type="text" formControlName="zip">
+  </label>
+  <br>
+  <br>
+</div>
+<button type="submit" [disabled]="!profileForm.valid">Submit</button> &nbsp;
+
+<button type="submit" (click)="updateProfile()" >Update</button>
+
+<!-- <div formArrayName="hobbyList">
+   <div *ngFor="let hobbyList1 of hobbyList().controls; let i=index">
+     <div [formGroupName]="i">
+            <h3>Hobbies List</h3> 
+              <label>
+                Hobby:
+                <input type="text" formArrayContolName='hobby' >
+              </label><br><br>
+              <button (click)="addHobby()">Add Hobby</button>
+     </div>
+   </div>
+</div> -->
+</form>
+
