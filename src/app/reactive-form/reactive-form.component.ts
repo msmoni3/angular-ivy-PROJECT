@@ -14,8 +14,10 @@ export class ReactiveFormComponent implements OnInit {
   reactiveLoginForm = new FormGroup({
     inputEmail4: new FormControl(''),
     inputPassword4 : new FormControl(''),
-    inputAddress : new FormControl('')})
-
+    inputAddress : new FormControl('') 
+    })
+    
+   
   onClick(){
   console.log("submit")
   console.log(this.reactiveLoginForm.value)
