@@ -13,6 +13,7 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { ReactiveFormBuilderComponent } from './reactive-form-builder/reactive-form-builder.component';
 import { FormarraySampleComponent } from './formarray-sample/formarray-sample.component';
 import { Child1Component } from './child1/child1.component';
+import { RXJSMAPComponent } from './rxjs-map/rxjs-map.component';
 
 @NgModule({
   imports:      [ BrowserModule,
@@ -22,7 +23,7 @@ import { Child1Component } from './child1/child1.component';
                   ReactiveFormsModule
                   // InMemoryWebApiModule.forRoot(TestData)
                   ],
-  declarations: [ AppComponent, HelloComponent, TemplateDrivenComponent, ReactiveFormComponent, ReactiveFormBuilderComponent, FormarraySampleComponent, Child1Component ],
+  declarations: [ AppComponent, HelloComponent, TemplateDrivenComponent, ReactiveFormComponent, ReactiveFormBuilderComponent, FormarraySampleComponent, Child1Component, RXJSMAPComponent],
   bootstrap:    [ AppComponent ],
   providers: [BookService]
 })
